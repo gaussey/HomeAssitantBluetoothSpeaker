@@ -66,4 +66,7 @@ Proxmox server
 6. Press **Call-Service** or **Perform the action**   
    <img width="1312" alt="image" src="https://github.com/user-attachments/assets/2b4bfc48-8db0-457f-b68b-344304ab2cdd" />
 
-
+### III. Appendix 1 - Solution for BT inactivity – auto shutdown (Disable HAOS bluetooth interactivity drop)
+1. 
+###  IV. Appendix 2 - Solution for BT inactivity – auto shutdown (Keep device busy)
+1. 
