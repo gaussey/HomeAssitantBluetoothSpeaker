@@ -67,13 +67,13 @@ Proxmox server
    <img width="1312" alt="image" src="https://github.com/user-attachments/assets/2b4bfc48-8db0-457f-b68b-344304ab2cdd" />
  
 ###  IV. Appendix 1 - Solution for BT inactivity – auto shutdown (Keep device busy)
-1. **Download 1-second silent mp3** (it will be use to play it every 5 minutes) -> https://github.com/anars/blank-audio/blob/master/1-second-of-silence.mp3
-2. Copy it to the the ```/local/www/``` folder (for deatails within the above sections)
+1. **Download*** 1-second-silent.mp3 (it will be use to play it every 5 minutes) -> https://github.com/anars/blank-audio/blob/master/1-second-of-silence.mp3
+2. Copy it into the the ```/local/www/``` folder (for deatails see the above sections)
    ``` cd /config/www/ ```
    ``` wget https://github.com/anars/blank-audio/blob/master/1-second-of-silence.mp3 ```
 4. Create a new Automation as set the params as shown below:
    <img width="1312" alt="image" src="https://github.com/user-attachments/assets/e88604fb-fc1d-47cf-a5dc-d83a821f42aa" />
-5. Give it a name by selecting top-right corrnet meny, then ```Rename``` (for example: "Keep Xiaomi BT Speaker Awake")
+5. Give it a name by selecting top-right corrner menu, then select ```Rename``` (for example: "Keep Xiaomi BT Speaker Awake")
 6. Save it and done. Now HA will play every 5 minute a silent sound preventing BT speaker auto-shutdown
 
 ### III. Appendix 2 - Solution for BT inactivity – auto shutdown (Disable HAOS bluetooth interactivity drop)
