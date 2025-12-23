@@ -151,6 +151,26 @@ To generate the tone in Audacity, using **Generate** -> **Tone...**.
 5. Give it a name by selecting top-right corner menu, then select ```Rename``` (for example: "Keep Xiaomi BT Speaker Awake")
 6. Save it and done. Now HA will play every 5 minute a silent sound preventing BT speaker auto-shutdown
 
-### III. Appendix 2 - Solution for BT inactivity – auto shutdown (Disable HAOS Bluetooth interactivity drop)
 
-1. TODO
+### V. A hard reboot of HomeAssistant OS will may disconnect the speaker
+
+To reconneect on start-up, create a shell script entry and execute that on HomeAssistant start :
+
+1. **In configuration.yaml:**
+```
+shell_command:
+  connectbt: /usr/bin/bluetoothctl connect **your speaker mac address** (e.g. connect 11:22:33:44:55)
+
+```
+
+2. **Restart Homeassistant**
+  
+3. **In automations.yaml**
+```
+  trigger:
+  - platform: homeassistant
+    event: start
+  action:
+  - service: shell_command.connectbt
+```
+
