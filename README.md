@@ -8,7 +8,7 @@ Proxmox server
 - Home Assistant (Supervisioned version) (for this tutorial Home Assistant 2023.6.3 -> Supervisor 2023.06.4 -> Operating System 10.3 were used)
 - Any Bluetooth speaker without auto-inactivity or/and auto-shutdown function. I've used **This OrcoW cheap (£6), basic bluetooth speaker from Amazon (UK)**
 ![image](https://github.com/user-attachments/assets/3b9da009-02c6-4dee-a287-16de0c3582f6)
-https://www.amazon.co.uk/dp/B0C9GTJ77L
+https://www.amazon.co.uk/dp/B0C9GTJ77L (Model SC211)
 
 ### I. Connection:
 1. Identify your BT speaker's **BT MAC Address** & **BT Name** 
